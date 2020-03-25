@@ -1,55 +1,18 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <title>Quiz</title>
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quick Quiz</title>
+    <link rel="stylesheet" href="app.css" />
 </head>
-
 <body>
-    <header>
-        <div id="container">
-            <div id="quizName">Kérlek válassz egy Quiz-t!</div>
-            <progress id="progressBar" value="1" max="1"></progress>
-        </div>
-    </header>
-
-    <main>
-        <div id="quizContainer"></div>
-    </main>
-
-    <footer>
-        Hibabejelentést a <a href="mailto:polakosz@freemail.hu">polakosz@freemail.hu</a>-ra küld, vagy nyiss egy Issue-t <a href="https://github.com/PoLaKoSz/WebQuiz/issues/new" target="_blank">GitHub</a>-on kérlek!
-    </footer>
-
-    <script src="js/core.js"></script>
-    <script>
-        var quizzes = new QuizManager(document.getElementById('quizContainer'));
-    </script>
-
-    <script src="js/makrookonomia.js"></script>
-    <script src="js/sztf1.js"></script>
-
-    <script>
-        quizzes.displayQuizSelector();
-
-        function nextQuestionEvent() {
-            quizzes.ActiveQuiz.nextQuestion();
-        }
-
-        function checkQuestionEvent() {
-            quizzes.ActiveQuiz.checkAnswers();
-        }
-
-        function selectQuizEvent(id) {
-            quizzes.changeQuizByID(id);
-        }
-    </script>
+    <div class="container"></div>
+    <div id="home" class="flex-center flex-column">
+        <h1>Quick Quiz</h1>
+        <a class="btn" href="game.html">Play</a>
+        <a class="btn" href="highscores.html">High Scores</a>
+    </div>  
 </body>
-
 </html>
