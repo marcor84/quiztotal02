@@ -1,0 +1,30 @@
+{
+  "name": "quiz-engine",
+  "version": "0.1.0",
+  "description": "An easy to use HTML5, CSS and JavaScript Quiz Engine.",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PoLaKoSz/WebQuiz.git"
+  },
+  "keywords": [
+    "quiz",
+    "survey",
+    "html",
+    "js",
+    "css",
+    "modules",
+    "easy"
+  ],
+  "author": "Tom PoLáKoSz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PoLaKoSz/WebQuiz/issues"
+  },
+  "homepage": "https://github.com/PoLaKoSz/WebQuiz",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
